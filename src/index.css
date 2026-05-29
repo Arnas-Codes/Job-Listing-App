@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&display=swap");
+
+@import "tailwindcss";
+
+:root {
+  /* Primary */
+  --green-400: hsl(180, 29%, 50%);
+
+  /* Neutral */
+  --green-50: hsl(180, 52%, 96%);
+  --gray-400: hsl(180, 8%, 52%);
+  --green-900: hsl(180, 14%, 20%);
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  font-size: 15px;
+  background-color: var(--green-50);
+  color: var(--green-900);
+  min-height: 100vh;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
