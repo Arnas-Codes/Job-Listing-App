@@ -10,7 +10,6 @@ import shortlyLogo from "./assets/shortly.svg";
 import insureLogo from "./assets/insure.svg";
 import eyecamLogo from "./assets/eyecam-co.svg";
 import airFilterLogo from "./assets/the-air-filter-company.svg";
-import mobileBg from "./assets/bg-header-mobile.svg";
 import iconRemove from "./assets/icon-remove.svg";
 const jobPost = [
   {
@@ -189,7 +188,7 @@ const App = () => {
     return filters.every((filter) => tags.includes(filter));
   });
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-h-screen ">
       {/* HEADER */}
       <div className="bg-[url('./assets/bg-header-mobile.svg')] md:bg-[url('./assets/bg-header-desktop.svg')] bg-(--green-400) bg-no-repeat bg-top bg-cover h-40" />
 
@@ -229,7 +228,7 @@ const App = () => {
           {filteredJobs.map((job) => (
             <div
               key={job.id}
-              className={`bg-white relative rounded-md shadow-lg px-6 py-8 flex flex-col gap-5 md:flex-row md:items-center md:justify-between ${
+              className={`bg-white relative rounded-md  shadow-lg px-6 py-5 flex flex-col gap-3 md:flex-row md:items-center md:justify-between ${
                 job.isFeatured ? "border-l-[5px] border-(--green-400)" : ""
               }`}
             >
@@ -243,7 +242,7 @@ const App = () => {
                 />
 
                 {/* INFO */}
-                <div className="mt-4 md:mt-0 flex flex-col gap-3">
+                <div className="mt-6 md:mt-0 flex flex-col gap-3">
                   {/* COMPANY + BADGES */}
                   <div className="flex flex-wrap items-center gap-3">
                     <p className="font-bold text-(--green-400)">
